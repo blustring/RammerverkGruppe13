@@ -19,11 +19,11 @@ public class LevelEditorScene extends Scene {
     private int vertexID, fragmentID, shaderProgram;
 
     private float[] vertexArray = {
-             //position             //color
-             50.5f, -50.5f, 0.0f,     1.0f, 0.0f, 0.0f, 1.0f, //bottom right
-            -50.5f, 50.5f, 0.0f,      0.0f, 1.0f, 0.0f, 1.0f, //top left
-             50.5f, 50.5f, 0.0f,      0.0f, 0.0f, 1.0f, 1.0f, //top right
-            -50.5f, -50.5f, 0.0f,     1.0f, 1.0f, 0.0f, 1.0f, //bottom left
+             //position             //color                     //UV Coordinates
+             50.5f, -50.5f, 0.0f,     1.0f, 0.0f, 0.0f, 1.0f,   1, 0,   //bottom right
+            -50.5f, 50.5f, 0.0f,      0.0f, 1.0f, 0.0f, 1.0f,   0, 1,   //top left
+             50.5f, 50.5f, 0.0f,      0.0f, 0.0f, 1.0f, 1.0f,   1, 1,   //top right
+            -50.5f, -50.5f, 0.0f,     1.0f, 1.0f, 0.0f, 1.0f,   0, 0    //bottom left
     };
 
     // IMPORTANT: must be in counter-clockwise order
@@ -78,19 +78,22 @@ public class LevelEditorScene extends Scene {
         // add the vertex attribute pointers
         int positionsSize = 3;
         int colorSize = 4;
-        int floatSizeBytes = 4;
-        int vertexSizeBytes = (positionsSize + colorSize) * floatSizeBytes;
+        int uvSize = 2;
+        //int floatSizeBytes = 4;
+        int vertexSizeBytes = (positionsSize + colorSize + uvSize) * Float.BYTES;
         glVertexAttribPointer(0, positionsSize, GL_FLOAT, false, vertexSizeBytes, 0);
         glEnableVertexAttribArray(0);
 
-        glVertexAttribPointer(1, colorSize, GL_FLOAT, false, vertexSizeBytes, positionsSize * floatSizeBytes);
+        glVertexAttribPointer(1, colorSize, GL_FLOAT, false, vertexSizeBytes, positionsSize * Float.BYTES);
         glEnableVertexAttribArray(1);
 
+        glVertexAttribPointer(2, uvSize, GL_FLOAT, false, vertexSizeBytes, (positionsSize + colorSize) * Float.BYTES);
+        glEnableVertexAttribArray(2);
     }
     @Override
     public void update(float dt) {
-        camera.position.x -=dt * 50.0f;
-        camera.position.y -=dt * 20.0f;
+       // camera.position.x -=dt * 50.0f;
+       // camera.position.y -=dt * 20.0f;
 
         defaultShader.use();
         defaultShader.uploadMat4f("uProjection", camera.getProjectionMatrix());

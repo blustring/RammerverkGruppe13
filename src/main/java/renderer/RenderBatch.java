@@ -5,6 +5,7 @@ import jade.Window;
 import org.joml.Vector4f;
 import org.lwjgl.opengl.GL15C;
 import org.lwjgl.opengl.GL20C;
+import util.AssetPool;
 
 import static org.lwjgl.opengl.GL15.*;
 import static org.lwjgl.opengl.GL20.*;
@@ -35,7 +36,7 @@ public class RenderBatch {
     private Shader shader;
 
     public RenderBatch(int maxBatchSize) {
-        shader = new Shader("assert/shaders/default.glsl");
+        shader = AssetPool.getShader("assert/shaders/default.glsl");
         shader.compile();
         this.sprites = new SpriteRenderer[maxBatchSize];
         this.maxBatchSize = maxBatchSize;

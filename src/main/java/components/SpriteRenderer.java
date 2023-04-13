@@ -1,21 +1,27 @@
 package components;
 
 import jade.Component;
+import org.joml.Vector4f;
 
 public class SpriteRenderer extends Component {
 
-    private boolean firsTime = false;
+    private Vector4f color;
+
+    public SpriteRenderer(Vector4f color) {
+        this.color = color;
+    }
+
 
     @Override
     public void start(){
-        System.out.println("I am starting");
+
     }
     @Override
     public void update(float dt) {
-        if (!firsTime){
 
-        System.out.println("I am updating");
-        firsTime = true;
         }
-    }
+        public Vector4f getColor () {
+        return this.color;
+        }
+
 }

@@ -1,5 +1,7 @@
 package jade;
 
+import components.FontRenderer;
+import components.SpriteRenderer;
 import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
 import renderer.Shader;
@@ -20,10 +22,10 @@ public class LevelEditorScene extends Scene {
 
     private float[] vertexArray = {
             // position               // color                  // UV Coordinates
-            100f, 0f,     0.0f,      1.0f, 0.0f, 0.0f, 1.0f,     1, 0, // Bottom right 0
-            0f,   100f,   0.0f,      0.0f, 1.0f, 0.0f, 1.0f,     0, 1, // Top left     1
-            100f, 100f,   0.0f,      1.0f, 0.0f, 1.0f, 1.0f,     1, 1, // Top right    2
-            0f,   0f,     0.0f,      1.0f, 1.0f, 0.0f, 1.0f,     0, 0  // Bottom left  3
+            100f, 0f,     0.0f,      1.0f, 0.0f, 0.0f, 1.0f,     1, 1, // Bottom right 0
+            0f,   100f,   0.0f,      0.0f, 1.0f, 0.0f, 1.0f,     0, 0, // Top left     1
+            100f, 100f,   0.0f,      1.0f, 0.0f, 1.0f, 1.0f,     1, 0, // Top right    2
+            0f,   0f,     0.0f,      1.0f, 1.0f, 0.0f, 1.0f,     0, 1  // Bottom left  3
     };
 
     // IMPORTANT: Must be in counter-clockwise order
@@ -39,6 +41,8 @@ public class LevelEditorScene extends Scene {
     private int vaoID, vboID, eboID;
     private Shader defaultShader;
     private Texture testTexture;
+    GameObject testObj;
+    private boolean firstTime = false;
 
     public LevelEditorScene() {
 
@@ -46,6 +50,12 @@ public class LevelEditorScene extends Scene {
 
     @Override
     public void init() {
+        System.out.println("Creating 'test object'");
+        this.testObj = new GameObject("test object");
+        this.testObj.addComponent(new SpriteRenderer());
+        this.testObj.addComponent(new FontRenderer());
+        this.addGameObjectToScene(this.testObj);
+
         this.camera = new Camera(new Vector2f(-200, -300));
         defaultShader = new Shader("assets/shaders/default.glsl");
         defaultShader.compile();
@@ -120,5 +130,17 @@ public class LevelEditorScene extends Scene {
         glBindVertexArray(0);
 
         defaultShader.detach();
+        if (!firstTime) {
+            System.out.println("Creating gameObject!");
+            GameObject go = new GameObject("Game Test 2");
+            go.addComponent(new SpriteRenderer());
+            this.addGameObjectToScene(go);
+            firstTime = true;
+        }
+
+
+        for (GameObject go : this.gameObjects) {
+            go.update(dt);
+        }
     }
 }

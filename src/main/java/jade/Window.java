@@ -50,6 +50,17 @@ public class Window {
                     break;
             }
         }
+    public static Window get() {
+        if (Window.window == null) {
+            Window.window = new Window();
+        }
+
+        return Window.window;
+    }
+
+    public static Scene getScene() {
+        return get().currentScene;
+    }
 
     public void run(){
         System.out.println("Hello opengl" + Version.getVersion() + "!");

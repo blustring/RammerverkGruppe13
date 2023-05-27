@@ -1,13 +1,11 @@
 package jade;
 
 public class LevelScene extends Scene {
-
-    public LevelScene(){
+    public LevelScene() {
         System.out.println("Inside level scene");
-        Window.getWindow().r = 1;
-        Window.getWindow().g = 1;
-        Window.getWindow().b = 1;
-
+        Window.get().r = 1;
+        Window.get().g = 1;
+        Window.get().b = 1;
     }
 
     @Override

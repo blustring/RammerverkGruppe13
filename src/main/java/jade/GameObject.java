@@ -1,6 +1,5 @@
 package jade;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +14,7 @@ public class GameObject {
         this.components = new ArrayList<>();
         this.transform = new Transform();
     }
+
     public GameObject(String name, Transform transform) {
         this.name = name;
         this.components = new ArrayList<>();

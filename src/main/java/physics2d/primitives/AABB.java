@@ -1,7 +1,7 @@
-package physics2dtmp.primitives;
+package physics2d.primitives;
 
 import org.joml.Vector2f;
-import physics2dtmp.rigidbody.Rigidbody2D;
+import physics2d.rigidbody.Rigidbody2D;
 
 // Axis Aligned Bounding Box
 public class AABB {

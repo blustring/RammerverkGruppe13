@@ -26,11 +26,11 @@ dependencies {
     implementation 'junit:junit:4.13.1'
 
 
-    // Include all available natives, but it's likely that you want something specific
+    // Include all available natives
     runtimeOnly "io.imgui.java:natives-windows:$imguiVersion"
 
 
-    // LWJGL stuff
+    // LWJGL
     implementation platform("org.lwjgl:lwjgl-bom:$lwjglVersion")
 
     implementation "org.lwjgl:lwjgl"

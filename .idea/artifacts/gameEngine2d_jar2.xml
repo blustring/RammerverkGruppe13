@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="gameEngine2d:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/gameEngine2d_jar2</output-path>
+    <root id="archive" name="gameEngine2d.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="gameEngine2d.main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.3/b4d8a3477cdc2edcf7a5f1e822926be846223f54/lwjgl-glfw-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-nfd/3.2.3/32782f5f5c57769efb82af864e70b819c77bc891/lwjgl-nfd-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.3/106742e805803ab9eab8e343f0fb31a3d263903c/lwjgl-openal-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.3/5e520d5c290c8b012545a8d34fa5db5ab051ea53/lwjgl-glfw-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/io.imgui.java/natives-windows/1.77-0.17.1/c1e723a75ac6dfba79b3a1056b79cee846be000d/natives-windows-1.77-0.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.3/ec898e8ce11b5886f4f532a1536283ef2817758d/lwjgl-openal-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-assimp/3.2.3/4e60aeb75f0343c4a9ede4ef8b6b32ca702a00a3/lwjgl-assimp-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/junit/junit/4.13.1/cdd00374f1fee76b11e2a9d127405aa3f6be5b6a/junit-4.13.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.3/40eccaa4fa86fc815f2e17946a392fb5fdcc286a/lwjgl-stb-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-assimp/3.2.3/f62aa07a20afbdd3097efc296c4841e0d29700eb/lwjgl-assimp-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.3/17a59ba0fe8d474ec9dbe0d5db40d2cfe59c4c08/lwjgl-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.3/e81cfc73ec8708e5e791ed770e4ec3edfc1bbab1/lwjgl-opengl-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/io.imgui.java/binding/1.77-0.17.1/7871bc35cf8b3acae98d9019bf7c59b1c0a92f10/binding-1.77-0.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.3/27f32cd35349684745951e04388e8e00d681cdcd/lwjgl-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-nfd/3.2.3/c44fee1043c022cf6614a28872d44cf114ca7737/lwjgl-nfd-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.3/bdd534a323d0c8f54969b95e424b6ac8984f7d6e/lwjgl-opengl-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.3/817b21ec286f0ba3dcedb56a3bd275e6a9345be9/lwjgl-stb-3.2.3-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../MarioYoutube-bee78af5f3334aa8289d8934c54b110d975e2006/caches/modules-2/files-2.1/io.imgui.java/lwjgl3/1.77-0.17.1/926c27057933eb6000d1bcf93c396e00cf397b14/lwjgl3-1.77-0.17.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
